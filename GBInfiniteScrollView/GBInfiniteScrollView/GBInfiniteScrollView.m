@@ -154,6 +154,7 @@ static CGFloat const GBAutoScrollDefaultInterval = 3.0f;
     self.showsHorizontalScrollIndicator = NO;
     self.showsVerticalScrollIndicator = NO;
     self.userInteractionEnabled = YES;
+    self.tapEnabled = YES;
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(panOnScrollView:)];
     pan.delegate = self;
